@@ -1,7 +1,7 @@
 # BSA Requirements Pack (Internal Ticketing Enhancements)
 
 **What this includes:**
-- 'BRD.md' - problem, objectives/KPIs, scope, risks
+- `BRD.md` - problem, objectives/KPIs, scope, risks
 - 'process_map.mmd' - Mermaid flowchart
 - 'user_stories.csv' - 12 backlog items with ACs, priority, estimates
 - 'release_plan.md' - MVP scope, 2-sprint plan, DoR/DoD, risks
