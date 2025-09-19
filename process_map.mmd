@@ -7,7 +7,7 @@ flowchart LR
   D -->|Yes| F[Proceed to Triage]
   B -->|No| F[Proceed to Triage]
   F --> G[Assign Category/Subcategory]
-  G --> H[First Human Triage <24h]
+  G --> H[First Human Triage < 24h]
   H --> I{SLA Breach?}
   I -->|Yes| J[Alert On-Duty Triager]
   I -->|No| K[Backlog Grooming]
