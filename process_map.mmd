@@ -1,4 +1,3 @@
-```mermaid
 flowchart LR
   A[Create Ticket] --> B{Duplicate?}
   B -->|Yes| C[Show Likely Duplicates + Links]
@@ -7,9 +6,8 @@ flowchart LR
   D -->|Yes| F[Proceed to Triage]
   B -->|No| F[Proceed to Triage]
   F --> G[Assign Category/Subcategory]
-  G --> H[First Human Triage < 24h]
+  G --> H[First Human Triage &lt; 24h]
   H --> I{SLA Breach?}
   I -->|Yes| J[Alert On-Duty Triager]
   I -->|No| K[Backlog Grooming]
   K --> L[Weekly Auto-Report by Squad]
-```
