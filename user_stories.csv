@@ -1,0 +1,13 @@
+ID,Title,Story,Acceptance Criteria,Priority,Estimate
+US-01,Duplicate detection,"As a triager, I want likely duplicates flagged so i avoid creating new tickets","Given a new ticket with >80% similarity on title+desc, Then the system shows 'Possible duplicate' with link; And triager can override with reason",High,5
+US-02,Controlled categories,"As a reporter, I must choose a category/subcategory so reporting is consistent",Category list required; Subcategory depends on Category; Prevent free text,High,3
+US-03,Triage SLA alert,"As a triager, I want alerts for items untriaged >24h",Job runs hourly; Items >24h trigger email+Slack to on-duty triager; Dashboard shows SLA breaches,High,3
+US-04,Override audit,"As a QA lead, I need an audit trail when duplicates are overridden","Override requires reason; Audit log includes user, timestamp, and previous match score",Medium,2
+US-05,Similarity threshold,"As an admin, I can adjust duplicate detection threshold by environment",Threshold configurable 60-95%; defaults to 80% in Prod; Changes logged,Medium,2
+US-06,Weekly report,"As an EM, I want a weekly auto-report of defects vs enhancements by squad",Report runs Fridays 5pm; Attach CSV; store copy to /reports with 8 weeks history,Medium,3
+US-07,Required fields,"As a reporter, I am blocked from submitting without category and description",Attempt to submit with missing fields shows inline errors; cannot proceed,High,1
+US-08,Accessibility,"As an accessibility user, I need ARIA labels on duplicate warning",Screen reader announces 'Possible duplicate' and links are tabbable,Low,1
+US-09,Performance,"As a triager, duplicate checks must return in <1s for 95th percentile",Performance budget documented; add simple caching for recent titles,Medium,3
+US-10,Data export,"As a data analyst, I can export tickets with category, SLA fields",Export CSV includes new fields; date filters; respects permissions,Medium,2
+US-11,Backfill,"As an admin, I can backfill categories on existing open tickets",Script updates open tickets; produces before/after counts,Low,2
+US-12,Help text,"As a reporter, I see inline help with examples for categories",Hover or info icon shows examples; content editable by admin,Low,1
